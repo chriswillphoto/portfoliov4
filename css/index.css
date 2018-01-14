@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Julius Sans One', sans-serif; }
+
+button {
+  border: none; }
+
+.about, .projects, .contact {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: -100%;
+  transition: all 1s;
+  background-color: white;
+  z-index: 1; }
+
+.about-menu-tag h5, .projects-menu-tag h5, .contact-menu-tag h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: slategrey; }
+
+.about-menu-tag, .projects-menu-tag, .contact-menu-tag {
+  position: absolute;
+  width: 50px;
+  right: -70px;
+  height: 25%;
+  border: none;
+  cursor: pointer; }
+  .about-menu-tag h5, .projects-menu-tag h5, .contact-menu-tag h5 {
+    text-transform: uppercase;
+    font-size: 11px; }
+
+.about .close, .projects .close, .contact .close {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer; }
+  .about .close .x1, .projects .close .x1, .contact .close .x1 {
+    top: 22px;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotateZ(45deg); }
+  .about .close .x2, .projects .close .x2, .contact .close .x2 {
+    top: 22px;
+    position: absolute;
+    height: 5px;
+    widtH: 50px;
+    transform: rotateZ(-45deg); }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: salmon;
+  z-index: 1;
+  background: url("https://res.cloudinary.com/dyqesnour/image/upload/v1515899143/_DSC6712-Edit-Edit-Edit-Edit_ckiut0.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.hover:hover {
+  transform: translateX(1%);
+  z-index: 5; }
+
+.selected {
+  transform: translateX(100%);
+  z-index: 1; }
+
+.not-selected {
+  transform: translateX(-2.15%);
+  z-index: 5; }
+
+.about-box, .projects-box {
+  transition: all 1s; }
+
+.about {
+  border: 20px solid #a4c4e8; }
+  .about h1.title {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    font-size: 64px; }
+    .about h1.title span {
+      color: #a4c4e8;
+      text-shadow: -1px -1px 0 grey, 2px 2px 0 grey, 3px 3px 0 grey, 4px 4px 0 grey; }
+  .about .close * {
+    background-color: #a4c4e8; }
+
+.about-menu-tag {
+  background-color: #a4c4e8;
+  top: -20px; }
+
+.projects {
+  border: 20px solid #fef8be; }
+  .projects .close * {
+    background-color: #fef8be; }
+
+.projects-menu-tag {
+  background-color: #fef8be;
+  top: calc(25% - 25px); }
+
+.contact {
+  border: 20px solid #f6a23b; }
+  .contact .close * {
+    background-color: #f6a23b; }
+
+.contact-menu-tag {
+  background-color: #f6a23b;
+  top: calc(50% - 25px); }
+
+@media screen and (max-width: 480px) {
+  body {
+    background-size: cover;
+    background-position: 48%; } }
+
+/*# sourceMappingURL=index.css.map */
