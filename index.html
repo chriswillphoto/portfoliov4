@@ -2,21 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio numero quattro</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+
   </head>
   <body>
 
+      <h3 class="tagline">A Web Dev Portfolio</h3>
+
       <div class="about hover">
-        <h1 class='title'>About <span>Me</span></h1>
+        <div class="words-container">
+          <h1 class='title'>About <span>Me</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facere earum labore, ipsa provident commodi consectetur enim ea ratione itaque fuga impedit rerum totam repellendus pariatur qui, tenetur possimus animi!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam asperiores odit nisi distinctio eum reiciendis quod qui, perferendis aspernatur libero assumenda repellendus eius facilis vel illo, vitae eaque quae corrupti?</p>
+          <h4>Things I Know</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>jQuery</li>
+          </ul>
+        </div>
 
-
-        <button class="about-menu-tag tag"><h5>A<br />B<br />O<br />U<br />T<br /> <br />M<br />E</button>
+        <div class="image-container"></div>
         <button class="close"><div class="x1"></div><div class="x2"></div></button>
+        <button class="about-menu-tag tag"><h5>A<br />B<br />O<br />U<br />T<br /> <br />M<br />E</button>
       </div>
 
       <div class="projects hover">
@@ -25,10 +35,33 @@
       </div>
 
     <div class="contact hover">
+
+      <h1>Need <span>Me?</span></h1>
+      <h2>Find Me:</h2>
+      <div class="socials">
+        <a href="">LinkedIn</a><a href="">Twitter</a><a href="">Instagram</a><a href="">Github</a>
+      </div>
+      <h3>- Write Me -</h3>
+      <p class="email"><em>christophernekich@gmail.com</em></p>
+
+      <form class="" action="index.html" method="post">
+      <input type="text" placeholder="Name" id="form-name">
+      <input type="text" placeholder="Email Address" id='form-email'>
+      <input type="text" placeholder="Subject" id='form-subject'>
+      <textarea name="message" id="form-message">Hey Chris!</textarea>
+      <button>Send!</button>
+
+      </form>
+
       <button class="contact-menu-tag tag"><h5>C<br />O<br />N<br />T<br />A<br />C<br />T</h5></button>
       <button class="close"><div class="x1"></div><div class="x2"></div></button>
     </div>
 
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   <script src="./js/main.js" charset="utf-8"></script>
   </body>
 </html>

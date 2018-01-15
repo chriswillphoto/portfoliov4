@@ -1,12 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@import url("https://fonts.googleapis.com/css?family=Biryani:400,900");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Julius Sans One', sans-serif; }
+  font-family: 'Biryani', sans-serif; }
 
 button {
   border: none; }
+
+.tagline {
+  display: none; }
 
 .about, .projects, .contact {
   position: absolute;
@@ -16,6 +19,11 @@ button {
   transition: all 1s;
   background-color: white;
   z-index: 1; }
+  .about h1.title, .projects h1.title, .contact h1.title {
+    font-size: 64px;
+    font-weight: 900; }
+    .about h1.title span, .projects h1.title span, .contact h1.title span {
+      color: #a4c4e8; }
 
 .about-menu-tag h5, .projects-menu-tag h5, .contact-menu-tag h5 {
   position: absolute;
@@ -35,20 +43,22 @@ button {
     text-transform: uppercase;
     font-size: 11px; }
 
-.about .close, .projects .close, .contact .close {
+.close, .projects .close, .contact .close {
   position: absolute;
-  top: 25px;
-  right: 50px;
+  top: 20px;
+  right: 20px;
   height: 50px;
   width: 50px;
-  cursor: pointer; }
-  .about .close .x1, .projects .close .x1, .contact .close .x1 {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1em; }
+  .close .x1 {
     top: 22px;
     position: absolute;
     height: 5px;
     width: 50px;
     transform: rotateZ(45deg); }
-  .about .close .x2, .projects .close .x2, .contact .close .x2 {
+  .close .x2 {
     top: 22px;
     position: absolute;
     height: 5px;
@@ -74,7 +84,7 @@ body {
   z-index: 1; }
 
 .not-selected {
-  transform: translateX(-2.15%);
+  transform: translateX(-2%);
   z-index: 5; }
 
 .about-box, .projects-box {
@@ -82,16 +92,42 @@ body {
 
 .about {
   border: 20px solid #a4c4e8; }
-  .about h1.title {
+  .about .words-container {
+    width: 55%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px;
+    text-align: justify; }
+    .about .words-container h4 {
+      text-align: center; }
+    .about .words-container p {
+      margin-bottom: 20px; }
+    .about .words-container ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      list-style-type: none; }
+      .about .words-container ul li {
+        justify-self: center; }
+  .about .image-container {
+    vertical-align: top;
+    display: inline-block;
     position: absolute;
-    top: 10%;
-    left: 4%;
-    font-size: 64px; }
-    .about h1.title span {
-      color: #a4c4e8;
-      text-shadow: -1px -1px 0 grey, 2px 2px 0 grey, 3px 3px 0 grey, 4px 4px 0 grey; }
-  .about .close * {
-    background-color: #a4c4e8; }
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/dyqesnour/image/upload/v1515930436/_DSC4760-Edit-Edit_upxbdx.jpg");
+    background-size: cover;
+    background-position: 90%; }
+    .about .image-container img {
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      right: 0; }
+
+.close * {
+  background-color: #a4c4e8; }
 
 .about-menu-tag {
   background-color: #a4c4e8;
@@ -107,7 +143,56 @@ body {
   top: calc(25% - 25px); }
 
 .contact {
-  border: 20px solid #f6a23b; }
+  border: 20px solid #f6a23b;
+  padding: 50px;
+  text-align: center; }
+  .contact h1, .contact h2 {
+    text-align: center; }
+  .contact h1 {
+    font-size: 64px;
+    margin: -25px; }
+    .contact h1 span {
+      color: #f6a23b; }
+  .contact h2 {
+    font-weight: 400; }
+  .contact h3 {
+    margin: 20px auto;
+    text-align: center; }
+  .contact p.email {
+    margin-top: -25px;
+    margin-bottom: 40px; }
+  .contact .socials {
+    text-align: center; }
+    .contact .socials a {
+      margin: 0 20px; }
+  .contact form * {
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+    line-height: 40px; }
+  .contact form *:focus {
+    outline: #f6a23b groove; }
+  .contact form #form-name {
+    width: 200px;
+    height: 40px; }
+  .contact form #form-email {
+    width: 200px;
+    height: 40px; }
+  .contact form #form-subject {
+    display: block;
+    margin: 0 auto 5px;
+    width: 400px;
+    height: 40px;
+    text-align: center; }
+  .contact form #form-message {
+    width: 400px;
+    height: 300px;
+    border: 1px solid grey; }
+  .contact form button {
+    border: 1px solid #a4c4e8;
+    display: block;
+    margin: 0 auto;
+    line-height: 20px; }
   .contact .close * {
     background-color: #f6a23b; }
 
@@ -118,6 +203,17 @@ body {
 @media screen and (max-width: 480px) {
   body {
     background-size: cover;
-    background-position: 48%; } }
+    background-position: 48%; }
+
+  .about-menu-tag h5, .projects-menu-tag h5, .contact-menu-tag h5 {
+    font-size: 8px; }
+
+  .tagline {
+    display: block;
+    position: absolute;
+    color: white;
+    padding-left: 50px;
+    bottom: 10%;
+    width: 100%; } }
 
 /*# sourceMappingURL=index.css.map */
