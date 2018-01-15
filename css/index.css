@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Biryani', sans-serif; }
 
+body {
+  overflow: hidden; }
+
 button {
   border: none; }
 
@@ -137,6 +140,24 @@ body {
   border: 20px solid #fef8be; }
   .projects .close * {
     background-color: #fef8be; }
+  .projects .projects-container {
+    min-width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    white-space: nowrap; }
+    .projects .projects-container .project {
+      background-color: skyblue;
+      height: 100%;
+      width: 400px;
+      white-space: normal; }
+      .projects .projects-container .project p {
+        padding: 10px;
+        font-size: 14px; }
+      .projects .projects-container .project h2 {
+        text-align: center; }
+      .projects .projects-container .project img {
+        width: 400px;
+        height: auto; }
 
 .projects-menu-tag {
   background-color: #fef8be;

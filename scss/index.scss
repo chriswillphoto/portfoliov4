@@ -12,6 +12,10 @@ $color3: rgb(246,162,59);
   font-family: 'Biryani', sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 button {
   border: none;
 }
@@ -217,6 +221,36 @@ body {
     @extend %close;
     * { background-color: $color2; }
   }
+
+  .projects-container {
+    min-width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    .project {
+      background-color: skyblue;
+      height: 100%;
+      width: 400px;
+      white-space: normal;
+
+      p {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+
+
 }
 
 .projects-menu-tag {
