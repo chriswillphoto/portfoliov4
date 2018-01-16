@@ -12,7 +12,7 @@ button {
   border: none; }
 
 .tagline {
-  background-color: navy;
+  background-color: #030F4C;
   color: white;
   position: absolute;
   right: 0;
@@ -20,7 +20,9 @@ button {
   width: 25%;
   padding-left: 30px;
   height: 45px;
-  line-height: 45px; }
+  line-height: 45px;
+  z-index: 0;
+  animation: slideLeft 1s ease-in-out 0s 1; }
 
 .about, .projects, .contact {
   position: absolute;
@@ -239,11 +241,10 @@ body {
     font-size: 8px; }
 
   .tagline {
-    display: block;
-    position: absolute;
-    color: white;
-    padding-left: 50px;
-    bottom: 10%;
-    width: 100%; } }
+    width: 60%;
+    font-size: 8px; } }
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%); } }
 
 /*# sourceMappingURL=index.css.map */
