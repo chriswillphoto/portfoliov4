@@ -1,0 +1,87 @@
+$color1: rgb(164,196,232);
+$color2: rgb(254,248,190);
+$color3: rgb(246,162,59);
+
+%pages {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: -100%;
+  transition: all 1s;
+  background-color: white;
+  z-index: 1;
+
+  h1.title {
+    // position: absolute;
+    // top: 10%;
+    // left: 4%;
+    font-size: 64px;
+    font-weight: 900;
+
+    span {
+      color: $color1;
+    }
+  }
+
+  // p {
+  //   position: absolute;
+  //   top: calc(10% + 88px);
+  //   left: calc(4% - 40px);
+  //   padding: 40px;
+  //   width: 50%;
+  //   background-color: rgba(255,255,255,0.6);
+  //   text-align: justify;
+  // }
+}
+
+%tabtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: slategrey;
+}
+
+%tabs{
+  position: absolute;
+  width: 50px;
+  right:  -70px;
+  height: 25%;
+  border: none;
+  cursor: pointer;
+
+  h5 {
+    @extend %tabtext;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  // border-top-right-radius: 1em;
+  // border-bottom-right-radius: 1em;
+}
+
+%close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 1em;
+
+  .x1 {
+    top: 22px;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    transform: rotateZ(45deg);
+  }
+
+  .x2 {
+    top: 22px;
+    position: absolute;
+    height: 5px;
+    widtH: 50px;
+    transform: rotateZ(-45deg);
+  }
+}

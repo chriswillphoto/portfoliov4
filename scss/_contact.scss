@@ -1,0 +1,95 @@
+.contact {
+  @extend %pages;
+  border: 20px solid $color3;
+  // background: linear-gradient(270deg, white 30%, $color3 100%);
+  padding: 50px;
+  text-align: center;
+
+  h1, h2{
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin: -25px;
+
+    span {
+      color: $color3;
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+
+  h3 {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  p.email {
+    margin-top: -25px;
+    margin-bottom: 40px;
+  }
+
+  .socials {
+    text-align: center;
+
+    a {
+      margin: 0 20px;
+    }
+  }
+
+  form {
+    * {
+      border: none;
+      border-bottom: 1px solid grey;
+      padding: 5px;
+      line-height: 40px;
+    }
+
+    *:focus {
+      outline: $color3 groove;
+    }
+
+    #form-name {
+      width: 200px;
+      height: 40px;
+    }
+    #form-email {
+      width: 200px;
+      height: 40px;
+    }
+    #form-subject {
+      display: block;
+      margin: 0 auto 5px;
+      width: 400px;
+      height: 40px;
+      text-align: center;
+    }
+    #form-message {
+      width: 400px;
+      height: 300px;
+      border: 1px solid grey;
+    }
+
+    button {
+      border: 1px solid $color1;
+      display: block;
+      margin: 0 auto;
+      line-height: 20px;
+    }
+  }
+
+
+  .close {
+    @extend %close;
+    * { background-color: $color3; }
+  }
+}
+
+.contact-menu-tag {
+  @extend %tabs;
+  background-color: $color3;
+  top: calc(50% - 25px);
+}
