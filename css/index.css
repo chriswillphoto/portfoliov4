@@ -153,22 +153,41 @@ body {
   .projects .projects-container {
     min-width: 100%;
     height: 100%;
-    overflow-x: auto;
-    white-space: nowrap; }
+    overflow-y: auto; }
+    .projects .projects-container h1 {
+      font-size: 64px;
+      text-align: center; }
+      .projects .projects-container h1 span {
+        color: #fef8be; }
     .projects .projects-container .project {
-      background-color: skyblue;
-      height: 100%;
-      width: 400px;
-      white-space: normal;
-      transition: width 1s; }
+      width: 100%;
+      transition: width 1s;
+      margin-bottom: 30px; }
+      .projects .projects-container .project .words {
+        display: inline-block;
+        width: calc(100% - 400px);
+        vertical-align: top;
+        text-align: center; }
+        .projects .projects-container .project .words .tech {
+          display: inline-block; }
+          .projects .projects-container .project .words .tech h5 {
+            padding-left: 20px;
+            display: inline-block; }
+          .projects .projects-container .project .words .tech p {
+            padding: 0 0 0 20px;
+            display: inline; }
+      .projects .projects-container .project a {
+        display: inline;
+        margin: 0 20px; }
       .projects .projects-container .project p {
         padding: 20px;
         font-size: 14px; }
       .projects .projects-container .project h2 {
         text-align: center; }
       .projects .projects-container .project img {
-        width: 400px;
-        height: auto; }
+        width: 396px;
+        height: auto;
+        display: inline-block; }
 
 .projects-menu-tag {
   background-color: #fef8be;

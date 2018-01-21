@@ -236,15 +236,50 @@ body {
   .projects-container {
     min-width: 100%;
     height: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-y: auto;
+    // white-space: nowrap;
+
+    h1 {
+      font-size: 64px;
+      text-align: center;
+
+      span {
+        color: $color2;
+      }
+    }
 
     .project {
-      background-color: skyblue;
-      height: 100%;
-      width: 400px;
-      white-space: normal;
+      // background-color: skyblue;
+      // height: 40%;
+      width: 100%;
+      // white-space: normal;
       transition: width 1s;
+      margin-bottom: 30px;
+
+      .words {
+        display: inline-block;
+        width: calc(100% - 400px);
+        vertical-align: top;
+        text-align: center;
+
+        .tech {
+          display: inline-block;
+
+          h5 {
+            padding-left: 20px;
+            display: inline-block;
+          }
+          p {
+            padding: 0 0 0 20px;
+            display: inline;
+          }
+        }
+      }
+
+      a {
+        display: inline;
+        margin: 0 20px;
+      }
 
       p {
         padding: 20px;
@@ -256,8 +291,9 @@ body {
       }
 
       img {
-        width: 400px;
+        width: 396px;
         height: auto;
+        display: inline-block;
       }
     }
   }
