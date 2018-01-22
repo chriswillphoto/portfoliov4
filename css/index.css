@@ -130,7 +130,8 @@
         margin: 0 20px; }
       .projects .projects-container .project p {
         padding: 20px;
-        font-size: 14px; }
+        font-size: 14px;
+        text-align: left; }
       .projects .projects-container .project h2 {
         text-align: center; }
       .projects .projects-container .project img {
