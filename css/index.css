@@ -105,7 +105,8 @@
     overflow-y: auto; }
     .projects .projects-container h1 {
       font-size: 64px;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 10px; }
       .projects .projects-container h1 span {
         color: #fef8be; }
     .projects .projects-container .project {
