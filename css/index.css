@@ -243,7 +243,7 @@ button {
   z-index: 1; }
 
 .not-selected {
-  transform: translateX(-2%);
+  transform: translateX(-1.4%);
   z-index: 5; }
 
 .about-box, .projects-box {
