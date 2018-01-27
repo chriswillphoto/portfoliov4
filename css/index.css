@@ -53,6 +53,10 @@
     widtH: 50px;
     transform: rotateZ(-45deg); }
 
+@media screen and (max-width: 480px) {
+  .about .close, .projects .close, .contact .close {
+    top: 5px;
+    right: 5px; } }
 .about {
   border: 20px solid #a4c4e8; }
   .about .words-container {
@@ -148,49 +152,49 @@
   border: 20px solid #f6a23b;
   padding: 50px;
   text-align: center; }
-  .contact h1, .contact h2 {
+  .contact .contact-container h1, .contact .contact-container h2 {
     text-align: center; }
-  .contact h1 {
+  .contact .contact-container h1 {
     font-size: 64px;
     margin: -25px; }
-    .contact h1 span {
+    .contact .contact-container h1 span {
       color: #f6a23b; }
-  .contact h2 {
+  .contact .contact-container h2 {
     font-weight: 400; }
-  .contact h3 {
+  .contact .contact-container h3 {
     margin: 20px auto;
     text-align: center; }
-  .contact p.email {
+  .contact .contact-container p.email {
     margin-top: -25px;
     margin-bottom: 40px; }
-  .contact .socials {
+  .contact .contact-container .socials {
     text-align: center; }
-    .contact .socials a {
+    .contact .contact-container .socials a {
       margin: 0 20px; }
-  .contact form * {
+  .contact .contact-container form * {
     border: none;
     border-bottom: 1px solid grey;
     padding: 5px;
     line-height: 40px; }
-  .contact form *:focus {
+  .contact .contact-container form *:focus {
     outline: #f6a23b groove; }
-  .contact form #form-name {
+  .contact .contact-container form #form-name {
     width: 200px;
     height: 40px; }
-  .contact form #form-email {
+  .contact .contact-container form #form-email {
     width: 200px;
     height: 40px; }
-  .contact form #form-subject {
+  .contact .contact-container form #form-subject {
     display: block;
     margin: 0 auto 5px;
     width: 400px;
     height: 40px;
     text-align: center; }
-  .contact form #form-message {
+  .contact .contact-container form #form-message {
     width: 400px;
     height: 300px;
     border: 1px solid grey; }
-  .contact form button {
+  .contact .contact-container form button {
     border: 1px solid #a4c4e8;
     display: block;
     margin: 0 auto;
@@ -202,6 +206,21 @@
   background-color: #f6a23b;
   top: calc(50% - 25px); }
 
+@media screen and (max-width: 480px) {
+  .contact {
+    padding: 0; }
+    .contact .contact-container {
+      overflow-y: auto;
+      height: 100%;
+      width: 100%;
+      padding: 20px; }
+      .contact .contact-container h1 {
+        font-size: 30px;
+        margin: 0; }
+      .contact .contact-container form #form-message, .contact .contact-container form #form-subject {
+        width: 200px; }
+      .contact .contact-container form #form-message {
+        height: 200px; } }
 * {
   margin: 0;
   padding: 0;

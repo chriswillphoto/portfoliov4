@@ -85,3 +85,10 @@ $color3: rgb(246,162,59);
     transform: rotateZ(-45deg);
   }
 }
+
+@media screen and (max-width: 480px) {
+  %close {
+    top: 5px;
+    right: 5px;
+  }
+}
