@@ -64,3 +64,35 @@
   background-color: $color1;
   top: -20px;
 }
+
+@media screen and (max-width: 480px) {
+  .about {
+    .words-container {
+      width: 100%;
+      overflow-y: auto;
+      font-size: 10px;
+      z-index: 2;
+      position: absolute;
+      background-color: rgba(255,255,255,0.7);
+      padding: 28px;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      ul {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+    .image-container {
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      filter: brightness(0.4);
+    }
+  }
+
+
+}
