@@ -82,3 +82,25 @@
   background-color: $color2;
   top: calc(25% - 25px);
 }
+
+@media screen and (max-width: 480px) {
+  .projects .projects-container {
+    h1 {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    .project {
+      padding: 0 25px 20px;
+      border-bottom: 5px dashed slategrey;
+      margin: 20px 0;
+      .words {
+        width: 100%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
