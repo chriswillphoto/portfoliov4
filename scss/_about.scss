@@ -1,7 +1,6 @@
 .about {
   @extend %pages;
   border: 20px solid $color1;
-
   .words-container {
     width: 55%;
     height: 100%;
@@ -9,6 +8,11 @@
     vertical-align: top;
     padding: 35px;
     text-align: justify;
+    overflow-y: auto;
+
+    span {
+      color: $color1;
+    }
 
     h4 {
       text-align: center;
@@ -36,11 +40,11 @@
     right: 0;
     width: 45%;
     height: 100%;
-    background: url("https://res.cloudinary.com/dyqesnour/image/upload/v1515930436/_DSC4760-Edit-Edit_upxbdx.jpg");
+    background: url('https://res.cloudinary.com/dyqesnour/image/upload/v1515930436/_DSC4760-Edit-Edit_upxbdx.jpg');
     background-size: cover;
     background-position: 90%;
 
-    img{
+    img {
       height: auto;
       max-width: 100%;
       max-height: 100%;
@@ -49,15 +53,13 @@
     }
   }
 
-  .close{
+  .close {
     @extend %close;
-    * { background-color: $color1; }
+    * {
+      background-color: $color1;
+    }
   }
-
 }
-
-
-
 
 .about-menu-tag {
   @extend %tabs;
@@ -73,17 +75,18 @@
       font-size: 10px;
       z-index: 2;
       position: absolute;
-      background-color: rgba(255,255,255,0.7);
+      background-color: rgba(255, 255, 255, 0.7);
       padding: 28px;
 
       h1 {
-        font-size: 30px;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
       }
 
       ul {
         grid-template-columns: 1fr 1fr;
       }
-
     }
     .image-container {
       top: 0;
@@ -93,6 +96,6 @@
       filter: brightness(0.4);
     }
   }
-
-
 }
+
+

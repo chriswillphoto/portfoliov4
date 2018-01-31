@@ -10,8 +10,6 @@
   .about h1.title, .projects h1.title, .contact h1.title {
     font-size: 64px;
     font-weight: 900; }
-    .about h1.title span, .projects h1.title span, .contact h1.title span {
-      color: #a4c4e8; }
 
 .about-menu-tag h5, .projects-menu-tag h5, .contact-menu-tag h5 {
   position: absolute;
@@ -51,13 +49,20 @@
     top: 22px;
     position: absolute;
     height: 5px;
-    widtH: 50px;
+    width: 50px;
     transform: rotateZ(-45deg); }
 
 @media screen and (max-width: 480px) {
   .about .close, .projects .close, .contact .close {
     top: 5px;
     right: 5px; } }
+@keyframes textColors {
+  0% {
+    color: #a4c4e8; }
+  50% {
+    color: #fef8be; }
+  100% {
+    color: #f6a23b; } }
 .about {
   border: 20px solid #a4c4e8; }
   .about .words-container {
@@ -66,7 +71,10 @@
     display: inline-block;
     vertical-align: top;
     padding: 35px;
-    text-align: justify; }
+    text-align: justify;
+    overflow-y: auto; }
+    .about .words-container span {
+      color: #a4c4e8; }
     .about .words-container h4 {
       text-align: center; }
     .about .words-container p {
@@ -110,7 +118,9 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: 28px; }
     .about .words-container h1 {
-      font-size: 30px; }
+      font-size: 40px;
+      text-align: center;
+      margin-top: 20px; }
     .about .words-container ul {
       grid-template-columns: 1fr 1fr; }
   .about .image-container {
@@ -170,8 +180,11 @@
 
 @media screen and (max-width: 600px) {
   .projects .projects-container h1 {
-    font-size: 30px;
-    margin-top: 20px; }
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    text-align: center;
+    padding: 25px; }
   .projects .projects-container .project {
     padding: 0 25px 20px;
     border-bottom: 5px dashed slategrey;
@@ -251,8 +264,11 @@
       width: 100%;
       padding: 20px; }
       .contact .contact-container h1 {
-        font-size: 30px;
-        margin: 0; }
+        font-size: 40px;
+        margin: 0;
+        margin-top: 20px; }
+      .contact .contact-container .socials a {
+        margin: 0 8px; }
       .contact .contact-container form #form-message, .contact .contact-container form #form-subject {
         width: 200px; }
       .contact .contact-container form #form-message {

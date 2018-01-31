@@ -1,6 +1,6 @@
-$color1: rgb(164,196,232);
-$color2: rgb(254,248,190);
-$color3: rgb(246,162,59);
+$color1: rgb(164, 196, 232);
+$color2: rgb(254, 248, 190);
+$color3: rgb(246, 162, 59);
 
 %pages {
   position: absolute;
@@ -18,9 +18,7 @@ $color3: rgb(246,162,59);
     font-size: 64px;
     font-weight: 900;
 
-    span {
-      color: $color1;
-    }
+
   }
 
   // p {
@@ -42,10 +40,10 @@ $color3: rgb(246,162,59);
   color: slategrey;
 }
 
-%tabs{
+%tabs {
   position: absolute;
   width: 50px;
-  right:  -70px;
+  right: -70px;
   height: 25%;
   border: none;
   cursor: pointer;
@@ -66,7 +64,7 @@ $color3: rgb(246,162,59);
   height: 50px;
   width: 50px;
   cursor: pointer;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1em;
   z-index: 4;
 
@@ -82,7 +80,7 @@ $color3: rgb(246,162,59);
     top: 22px;
     position: absolute;
     height: 5px;
-    widtH: 50px;
+    width: 50px;
     transform: rotateZ(-45deg);
   }
 }
@@ -91,5 +89,17 @@ $color3: rgb(246,162,59);
   %close {
     top: 5px;
     right: 5px;
+  }
+}
+
+@keyframes textColors {
+  0% {
+    color: $color1;
+  }
+  50% {
+    color: $color2;
+  }
+  100% {
+    color: $color3;
   }
 }
