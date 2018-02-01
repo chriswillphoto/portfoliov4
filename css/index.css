@@ -79,6 +79,8 @@
       text-align: center; }
     .about .words-container p {
       margin-bottom: 15px; }
+    .about .words-container a {
+      color: #a4c4e8; }
     .about .words-container ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -162,9 +164,12 @@
             padding: 0 0 0 20px;
             display: inline; }
       .projects .projects-container .project a {
-        display: inline;
+        display: inline-block;
         margin: 0 20px;
         color: #a4c4e8; }
+      .projects .projects-container .project .img-link {
+        display: inline-block;
+        margin: 0; }
       .projects .projects-container .project p {
         padding: 0 100px 24px;
         font-size: 14px;

@@ -22,6 +22,10 @@
       margin-bottom: 15px;
     }
 
+    a {
+      color: $color1;
+    }
+
     ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
