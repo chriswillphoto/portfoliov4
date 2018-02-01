@@ -28,3 +28,5 @@ $('.contact-link').on('click', function(event) {
   event.preventDefault();
   $('.contact-menu-tag').click();
 });
+
+$(".email em").text("chris" + "will" + "dev" + "@gmail.com")

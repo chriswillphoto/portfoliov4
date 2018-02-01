@@ -144,16 +144,17 @@
       .projects .projects-container h1 span {
         color: #fef8be; }
     .projects .projects-container .project {
-      width: 100%;
+      width: 80%;
+      margin: 0 auto;
       transition: width 1s;
-      margin-bottom: 30px; }
+      margin-bottom: 50px; }
       .projects .projects-container .project .words {
         display: inline-block;
         width: calc(100% - 400px);
         vertical-align: top;
         text-align: center; }
         .projects .projects-container .project .words .tech {
-          display: inline-block; }
+          display: block; }
           .projects .projects-container .project .words .tech h5 {
             padding-left: 20px;
             display: inline-block; }
@@ -162,9 +163,10 @@
             display: inline; }
       .projects .projects-container .project a {
         display: inline;
-        margin: 0 20px; }
+        margin: 0 20px;
+        color: #a4c4e8; }
       .projects .projects-container .project p {
-        padding: 20px;
+        padding: 0 100px 24px;
         font-size: 14px;
         text-align: left; }
       .projects .projects-container .project h2 {
@@ -172,7 +174,8 @@
       .projects .projects-container .project img {
         width: 396px;
         height: auto;
-        display: inline-block; }
+        display: inline-block;
+        box-shadow: 0 0 16px 2px #282828; }
 
 .projects-menu-tag {
   background-color: #fef8be;
@@ -187,12 +190,15 @@
     padding: 25px; }
   .projects .projects-container .project {
     padding: 0 25px 20px;
-    border-bottom: 5px dashed slategrey;
-    margin: 20px 0; }
+    border-bottom: 5px dashed slategrey; }
     .projects .projects-container .project .words {
       width: 100%; }
       .projects .projects-container .project .words p {
         padding: 5px; }
+      .projects .projects-container .project .words .tech p,
+      .projects .projects-container .project .words .tech h5 {
+        font-size: 10px;
+        padding: 0 5px; }
     .projects .projects-container .project img {
       max-width: 100%;
       margin: 0 auto;
@@ -237,8 +243,7 @@
     display: block;
     margin: 0 auto 5px;
     width: 400px;
-    height: 40px;
-    text-align: center; }
+    height: 40px; }
   .contact .contact-container form #form-message {
     width: 400px;
     height: 300px;
