@@ -114,10 +114,10 @@
   .about .words-container {
     width: 100%;
     overflow-y: auto;
-    font-size: 10px;
+    font-size: 14px;
     z-index: 2;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 28px; }
     .about .words-container h1 {
       font-size: 40px;
@@ -156,7 +156,10 @@
         vertical-align: top;
         text-align: center; }
         .projects .projects-container .project .words .tech {
-          display: block; }
+          display: block;
+          width: 80%;
+          margin: 0 auto 10px;
+          text-align: left; }
           .projects .projects-container .project .words .tech h5 {
             padding-left: 20px;
             display: inline-block; }
@@ -171,7 +174,9 @@
         display: inline-block;
         margin: 0; }
       .projects .projects-container .project p {
-        padding: 0 100px 24px;
+        padding: 0 20px;
+        margin: 0 auto 20px;
+        width: 80%;
         font-size: 14px;
         text-align: left; }
       .projects .projects-container .project h2 {
@@ -199,14 +204,16 @@
     .projects .projects-container .project .words {
       width: 100%; }
       .projects .projects-container .project .words p {
-        padding: 5px; }
+        padding: 5px;
+        width: 100%;
+        margin: 0; }
       .projects .projects-container .project .words .tech p,
       .projects .projects-container .project .words .tech h5 {
         font-size: 10px;
         padding: 0 5px; }
     .projects .projects-container .project img {
       max-width: 100%;
-      margin: 0 auto;
+      margin: 10px auto 0;
       display: block; } }
 .contact {
   border: 20px solid #f6a23b;
@@ -230,7 +237,8 @@
   .contact .contact-container .socials {
     text-align: center; }
     .contact .contact-container .socials a {
-      margin: 0 20px; }
+      margin: 0 20px;
+      color: #a4c4e8; }
   .contact .contact-container form * {
     border: none;
     border-bottom: 1px solid grey;
