@@ -52,7 +52,7 @@
     width: 50px;
     transform: rotateZ(-45deg); }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .about .close, .projects .close, .contact .close {
     top: 5px;
     right: 5px; } }
@@ -110,7 +110,7 @@
   background-color: #a4c4e8;
   top: -20px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .about .words-container {
     width: 100%;
     overflow-y: auto;
@@ -191,7 +191,7 @@
   background-color: #fef8be;
   top: calc(25% - 25px); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 640px) {
   .projects .projects-container h1 {
     font-size: 40px;
     margin-top: 20px;
@@ -273,7 +273,7 @@
   background-color: #f6a23b;
   top: calc(50% - 25px); }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .contact {
     padding: 0; }
     .contact .contact-container {
