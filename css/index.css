@@ -86,6 +86,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       list-style-type: none; }
       .about .words-container ul li {
+        text-align: center;
         justify-self: center; }
   .about .image-container {
     vertical-align: top;
